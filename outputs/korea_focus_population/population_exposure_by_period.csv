@@ -1,0 +1,19 @@
+geography,species,period,mean_annual_ambient_population_observed_cells,population_weighted_mean_suitable_months,population_weighted_mean_suitable_span_months,population_weighted_mean_longest_contiguous_run,n_cells_total,n_cells_with_population,n_cells_with_joint_data,population_cell_coverage_fraction,joint_cell_coverage_fraction,interpretation
+North Korea,aegypti,1975-1984,16732939.257553,3.073859,3.075449,3.072268,215,215,215,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+North Korea,aegypti,1995-2004,22252575.488747,3.319777,3.374854,3.264701,215,215,215,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+North Korea,aegypti,2015-2024,25229886.303034,3.545713,3.594857,3.496568,215,215,215,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+South Korea,aegypti,1975-1984,36529705.510672,4.089854,4.093074,4.086633,155,155,155,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+South Korea,aegypti,1995-2004,45987847.610412,4.341259,4.357595,4.324923,155,155,155,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+South Korea,aegypti,2015-2024,50702084.764521,4.575013,4.579442,4.569547,155,155,155,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+Korean Peninsula,aegypti,1975-1984,53262644.768225,3.770670,3.773378,3.767961,370,370,370,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+Korean Peninsula,aegypti,1995-2004,68240423.099159,4.008163,4.037132,3.979194,370,370,370,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+Korean Peninsula,aegypti,2015-2024,75931971.067556,4.233007,4.252294,4.213029,370,370,370,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+North Korea,albopictus,1975-1984,16732939.257553,4.387731,4.387738,4.387724,215,215,215,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+North Korea,albopictus,1995-2004,22252575.488747,4.659362,4.668481,4.643644,215,215,215,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+North Korea,albopictus,2015-2024,25229886.303034,4.824572,4.854106,4.795038,215,215,215,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+South Korea,albopictus,1975-1984,36529705.510672,5.424495,5.424837,5.424152,155,155,155,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+South Korea,albopictus,1995-2004,45987847.610412,5.510058,5.510849,5.509266,155,155,155,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+South Korea,albopictus,2015-2024,50702084.764521,5.760206,5.760206,5.760206,155,155,155,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+Korean Peninsula,albopictus,1975-1984,53262644.768225,5.098786,5.099023,5.098549,370,370,370,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+Korean Peninsula,albopictus,1995-2004,68240423.099159,5.232654,5.236161,5.226995,370,370,370,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
+Korean Peninsula,albopictus,2015-2024,75931971.067556,5.449323,5.459137,5.439510,370,370,370,1.000000,1.000000,Population exposure indicator; not disease incidence or individual risk
