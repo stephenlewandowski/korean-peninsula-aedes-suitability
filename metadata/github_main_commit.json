@@ -1,0 +1,101 @@
+{
+  "sha": "59c591857d7b78fa6f7e29fdcb75fa5777889566",
+  "node_id": "C_kwDOT3x1BdoAKDU5YzU5MTg1N2Q3Yjc4ZmE2ZjdlMjlmZGNiNzVmYTU3Nzc4ODk1NjY",
+  "commit": {
+    "author": {
+      "name": "ChrisIrr",
+      "email": "116660881+ChrisIrr@users.noreply.github.com",
+      "date": "2026-08-14T08:04:19Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-08-14T08:04:19Z"
+    },
+    "message": "Update README with Zenodo data set link\n\nAdded link to full habitat suitability data set on Zenodo.",
+    "tree": {
+      "sha": "671c25b4d3eed2a3343864b2cd84f5b49a958e77",
+      "url": "https://api.github.com/repos/ClimSocAna/climademic_suitability_model/git/trees/671c25b4d3eed2a3343864b2cd84f5b49a958e77"
+    },
+    "url": "https://api.github.com/repos/ClimSocAna/climademic_suitability_model/git/commits/59c591857d7b78fa6f7e29fdcb75fa5777889566",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqfswDCRC1aQ7uu5UhlAAAdE0QABFRstRwyOYdT97M3ksBxAoP\nt2vtfRcUsxgEWW/9TVQBqadK5GMO5E4DNUiiBHH6CK6MbOFUqBrGNMbA/w0arii3\nU0Z3zHYJKpRVlWKxyG8/1EtmMvl9Wit2eOCcB6AymA+L76Vy6MDGaGOOccg2Ggnu\ntMk9UUWg/Kwhx1tZ30uw8NBYZagADQCudjSkj8J6CDDu5JjFlPeoPAOA038zq1z+\nu9Y5gwXyGi7pXiARlnF4sOlmDvE6LMtMH5yeASsHPGwxwy5gYV2e+u7WVSnl1DEp\nop62tAdZvSLXFfLmEKckocPi+0H39EakC3oL/U3NKKFPbtK7zlUmNdZhKlh2b3nl\n6GF7sfp3cJuFitzMIXcUjvhJd3BYTiRCc2EOv8XvHgNhLHtY0sgCbu6zVf5FAM/a\nOTtW5RM8iVzRUqLnfIXrETPl/rbxOE+HsYY5hLyKV8qyrZNqLGLC7F6HzD+JvBqE\nW+7d3okR3ArU6fLVdsv5HrBDOrL0jMjUwKCi95qEbZEAX40oF0MKclw8jH6al3KU\nH5RrDo85iwC9PuVYmEgh7a+aoAoSlulvXCN+tPIba+HwtVd6+SQAbca1VPh7zw4z\nRkdv2jVJSMfazPpHjsRpaMizUfPGraL4UUe+vqZ5MyVuWPulHAS5b3H9ZUTKl7Qz\nkG07UgauxufSNcQJBugA\n=u8gx\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 671c25b4d3eed2a3343864b2cd84f5b49a958e77\nparent e7a1e1bfc1aa17ebb8fe2de594bc27f2d6fc1699\nauthor ChrisIrr <116660881+ChrisIrr@users.noreply.github.com> 1786694659 +0200\ncommitter GitHub <noreply@github.com> 1786694659 +0200\n\nUpdate README with Zenodo data set link\n\nAdded link to full habitat suitability data set on Zenodo.",
+      "verified_at": "2026-08-14T08:04:23Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ClimSocAna/climademic_suitability_model/commits/59c591857d7b78fa6f7e29fdcb75fa5777889566",
+  "html_url": "https://github.com/ClimSocAna/climademic_suitability_model/commit/59c591857d7b78fa6f7e29fdcb75fa5777889566",
+  "comments_url": "https://api.github.com/repos/ClimSocAna/climademic_suitability_model/commits/59c591857d7b78fa6f7e29fdcb75fa5777889566/comments",
+  "author": {
+    "login": "ChrisIrr",
+    "id": 116660881,
+    "node_id": "U_kgDOBvQakQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/116660881?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ChrisIrr",
+    "html_url": "https://github.com/ChrisIrr",
+    "followers_url": "https://api.github.com/users/ChrisIrr/followers",
+    "following_url": "https://api.github.com/users/ChrisIrr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ChrisIrr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ChrisIrr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ChrisIrr/subscriptions",
+    "organizations_url": "https://api.github.com/users/ChrisIrr/orgs",
+    "repos_url": "https://api.github.com/users/ChrisIrr/repos",
+    "events_url": "https://api.github.com/users/ChrisIrr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ChrisIrr/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "e7a1e1bfc1aa17ebb8fe2de594bc27f2d6fc1699",
+      "url": "https://api.github.com/repos/ClimSocAna/climademic_suitability_model/commits/e7a1e1bfc1aa17ebb8fe2de594bc27f2d6fc1699",
+      "html_url": "https://github.com/ClimSocAna/climademic_suitability_model/commit/e7a1e1bfc1aa17ebb8fe2de594bc27f2d6fc1699"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "additions": 1,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "59606158513c463367d535bbf5d9cd059d1ae1b6",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/ClimSocAna/climademic_suitability_model/blob/59c591857d7b78fa6f7e29fdcb75fa5777889566/README.md",
+      "raw_url": "https://github.com/ClimSocAna/climademic_suitability_model/raw/59c591857d7b78fa6f7e29fdcb75fa5777889566/README.md",
+      "contents_url": "https://api.github.com/repos/ClimSocAna/climademic_suitability_model/contents/README.md?ref=59c591857d7b78fa6f7e29fdcb75fa5777889566",
+      "patch": "@@ -1,7 +1,7 @@\n <img src=\"https://github.com/ClimSocAna/climademic_suitability_model/blob/main/logo.jpg\">\n \n ## About\n-This repository contains the workflow pipeline for training and inferencing the Climademic Suitability Model, as described in [Suitable seasons: Global monthly habitat suitability for the arbovirus vectors Aedes aegypti and Aedes albopictus in 1975–2024 (bioRxiv)](https://doi.org/10.64898/2026.04.17.719149). The model combines One-Class Support Vector Machines (OC-SVM) with an incremental learning strategy to continuously update suitability predictions using newly available mosquito occurrence observations.\n+This repository contains the workflow pipeline for training and inferencing the Climademic Suitability Model, as described in [Suitable seasons: Global monthly habitat suitability for the arbovirus vectors Aedes aegypti and Aedes albopictus in 1975–2024 (bioRxiv)](https://doi.org/10.64898/2026.04.17.719149). The model combines One-Class Support Vector Machines (OC-SVM) with an incremental learning strategy to continuously update suitability predictions using newly available mosquito occurrence observations. The full habitat suitability data set is available via [Zenodo](https://zenodo.org/records/21924442).\n \n ## Workflow Overview\n "
+    }
+  ]
+}

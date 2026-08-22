@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-08-20T04:40:51.983669+00:00",
+  "status": "schema_checked_no_observations_supplied",
+  "template": "inputs/aedes_observations.template.csv",
+  "observations": null,
+  "n_records": 0,
+  "n_groups": 0,
+  "warnings": [],
+  "interpretation_boundary": "This audit is not a fitted model, validation score, abundance estimate, disease forecast, or DPRK assessment.",
+  "observation_types_are_separate": true
+}
