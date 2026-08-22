@@ -1,0 +1,7 @@
+country,period,expected_cells,expected_cell_year_rows,observed_cell_year_rows,missing_cell_year_rows,missing_fraction
+North Korea,1975-1984,215,2150,2150,0,0.000000
+North Korea,1995-2004,215,2150,2150,0,0.000000
+North Korea,2015-2024,215,2150,2150,0,0.000000
+South Korea,1975-1984,155,1550,1550,0,0.000000
+South Korea,1995-2004,155,1550,1550,0,0.000000
+South Korea,2015-2024,155,1550,1550,0,0.000000

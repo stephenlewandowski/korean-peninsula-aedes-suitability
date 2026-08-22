@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-08-22T12:49:49.549745+00:00",
+  "input_population": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\korea_landscan_population_by_cell_year.csv",
+  "population_source": {
+    "dataset": "LandScan Mosaic Annual Global Ambient Population Time Series, Version 1.0",
+    "official_dataset_page": "https://impact.ornl.gov/en/datasets/landscan-mosaic-annual-global-ambient-population-time-series-vers/",
+    "collection": "projects/sat-io/open-datasets/ORNL/LANDSCAN_MOSAIC_TIMESERIES",
+    "years": [
+      1975,
+      2024
+    ],
+    "expected_measure": "ambient population, number of people per analysis cell"
+  },
+  "analysis_scope": {
+    "scope": "korea",
+    "countries": [
+      "North Korea",
+      "South Korea"
+    ],
+    "geographies": [
+      "North Korea",
+      "South Korea",
+      "Korean Peninsula"
+    ],
+    "periods": [
+      "1975-1984",
+      "1995-2004",
+      "2015-2024"
+    ],
+    "interpretation": "Population exposure indicators are distinct from disease incidence, infection, individual risk, and transmission."
+  },
+  "input_rows": 11100,
+  "suitability_input": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\tables\\korea_focus_cell_year_season.csv.gz",
+  "suitability_rows": 22200,
+  "joined_rows": 2220,
+  "require_complete": true
+}
