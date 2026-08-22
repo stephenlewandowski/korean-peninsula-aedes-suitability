@@ -1,0 +1,4 @@
+numpy>=2.1
+pandas>=2.0
+matplotlib>=3.8
+tifffile>=2026.8.16

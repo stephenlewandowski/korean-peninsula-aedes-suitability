@@ -1,0 +1,7 @@
+source/*.zip
+source/*.partial-*.zip
+source/ne_10m_admin_0_countries.geojson
+source/countries.geojson
+tmp/
+vendor/
+__pycache__/

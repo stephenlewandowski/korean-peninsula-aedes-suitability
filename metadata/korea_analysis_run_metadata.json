@@ -1,0 +1,133 @@
+{
+  "created_utc": "2026-08-19T13:47:45.061609+00:00",
+  "analysis_scope": {
+    "countries": [
+      "North Korea",
+      "South Korea"
+    ],
+    "geographies": [
+      "North Korea",
+      "South Korea",
+      "Korean Peninsula"
+    ],
+    "species": [
+      "aegypti",
+      "albopictus"
+    ],
+    "years": [
+      1975,
+      2024
+    ],
+    "periods": {
+      "1975-1984": [
+        1975,
+        1976,
+        1977,
+        1978,
+        1979,
+        1980,
+        1981,
+        1982,
+        1983,
+        1984
+      ],
+      "1995-2004": [
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004
+      ],
+      "2015-2024": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    }
+  },
+  "source": {
+    "zenodo_record": "https://zenodo.org/records/21924442",
+    "zenodo_version": "2.0",
+    "dataset_title": "Global habitat suitability dataset for Aedes aegypti and Aedes albopictus derived using the Climademic Suitability Model",
+    "aegypti_zip_sha256": "dc80d98eea3550b4603a2bcf976fd0910110058dbc3183fd32cf4c9fd258d19c",
+    "albopictus_zip_sha256": "2823c110f903db03750592e60af5219477433f3cbd0840c716b213d247ce4d3e",
+    "data_specification_sha256": "0db53d6fa8022af200e6384b73aca9bc63f81ec270c0879189e81fe27d123ce2",
+    "model_repository": "https://github.com/ClimSocAna/climademic_suitability_model",
+    "boundary_source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_admin_0_countries.geojson",
+    "boundary_sha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255",
+    "retrieval_date": "2026-08-19",
+    "current_zenodo_record_version": "2.0",
+    "analysis_reference_file": "Climademic-Suitability-Model-Aedes-Reference-2026-08-16.md",
+    "model_repository_commit": "59c591857d7b78fa6f7e29fdcb75fa5777889566",
+    "zenodo_file_inventory": [
+      {
+        "key": "Data_Specification.pdf",
+        "size": 179909,
+        "checksum": "md5:ddc2fc0c80a62538d9ecb6f19d90a756"
+      },
+      {
+        "key": "albopictus.zip",
+        "size": 34653850,
+        "checksum": "md5:85d7515d965a524b7bfc978fddd707c8"
+      },
+      {
+        "key": "aegypti.zip",
+        "size": 33795708,
+        "checksum": "md5:42104d7f387f2798580370dcd7680706"
+      }
+    ]
+  },
+  "model_and_aggregation": {
+    "input_crs": "EPSG:4326",
+    "input_resolution_degrees": 0.25,
+    "probability_range": [
+      0.0,
+      1.0
+    ],
+    "nodata_value": -1.0,
+    "suitability_threshold": 0.5,
+    "threshold_basis": "The authors describe 0.5 as the decision boundary; this analysis uses score >= 0.5 for suitable-month counts.",
+    "cell_inclusion": "A grid cell is included when its center falls inside the Natural Earth 10m country polygon; boundary-edge partial-cell area is not clipped.",
+    "regional_mean": "Primary means are cosine(latitude)-weighted across valid cell-year observations; unweighted means are retained for aggregation sensitivity.",
+    "season_length": "Number of calendar months in a year with suitability >= threshold. Primary means use only complete 12-month cell-years; observed-month counts are retained for missingness diagnostics.",
+    "missingness": "No imputation is performed. Values outside [0, 1], NaN, and -1 are treated as missing.",
+    "uncertainty": "The source provides probability-like model scores but no per-cell uncertainty layer. Quantiles, standard deviations, valid counts, and missingness are descriptive variability indicators, not model confidence intervals."
+  },
+  "grid": {
+    "source_raster_shape": [
+      559,
+      1439,
+      12
+    ],
+    "regional_window": {
+      "longitude": [
+        123.0,
+        132.5
+      ],
+      "latitude": [
+        32.0,
+        44.0
+      ]
+    },
+    "target_cell_counts": {
+      "North Korea": 215,
+      "South Korea": 155,
+      "Korean Peninsula": 370
+    }
+  },
+  "output_row_counts": {
+    "cell_year_monthly": 37000
+  }
+}

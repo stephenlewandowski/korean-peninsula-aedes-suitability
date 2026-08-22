@@ -1,0 +1,7 @@
+geography,species,mean_suitable_months_1975-1984,mean_suitable_months_2015-2024,mean_suitable_months_unweighted_1975-1984,mean_suitable_months_unweighted_2015-2024,mean_suitable_months_delta_recent_minus_early,mean_suitable_months_unweighted_delta_recent_minus_early
+Korean Peninsula,aegypti,2.669411,3.238187,2.642703,3.211081,0.568776,0.568378
+Korean Peninsula,albopictus,4.212059,4.713721,4.186216,4.688378,0.501661,0.502162
+North Korea,aegypti,2.116604,2.626974,2.103256,2.615349,0.510370,0.512093
+North Korea,albopictus,3.649965,4.146392,3.638140,4.135814,0.496427,0.497674
+South Korea,aegypti,3.397198,4.042868,3.390968,4.037419,0.645670,0.646452
+South Korea,albopictus,4.952073,5.460626,4.946452,5.454839,0.508552,0.508387

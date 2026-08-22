@@ -1,0 +1,2 @@
+# Optional dependencies for the follow-on applications.
+scikit-learn>=1.5
