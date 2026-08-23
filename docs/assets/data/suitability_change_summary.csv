@@ -1,0 +1,7 @@
+geography,species,mean_first_suitable_month_1975-1984,mean_first_suitable_month_2015-2024,mean_last_suitable_month_1975-1984,mean_last_suitable_month_2015-2024,mean_longest_contiguous_run_1975-1984,mean_longest_contiguous_run_2015-2024,mean_suitable_months_1975-1984,mean_suitable_months_2015-2024,mean_suitable_span_months_1975-1984,mean_suitable_span_months_2015-2024,mean_suitable_months_delta_recent_minus_early,mean_first_suitable_month_delta_recent_minus_early,mean_last_suitable_month_delta_recent_minus_early,mean_suitable_span_months_delta_recent_minus_early,mean_longest_contiguous_run_delta_recent_minus_early
+Korean Peninsula,aegypti,6.367166,6.172937,8.383197,8.57939,2.663368,3.214428,2.669411,3.238187,2.675454,3.261104,0.568776,-0.19423,0.196193,0.58565,0.55106
+Korean Peninsula,albopictus,5.674924,5.397959,8.894378,9.127619,4.210157,4.705147,4.212059,4.713721,4.213961,4.722294,0.501661,-0.276965,0.233241,0.508333,0.49499
+North Korea,aegypti,6.540069,6.454891,8.151205,8.326593,2.111849,2.597851,2.116604,2.626974,2.121359,2.656097,0.51037,-0.085178,0.175388,0.534738,0.486002
+North Korea,albopictus,5.956309,5.65031,8.615122,8.823223,3.649498,4.131306,3.649965,4.146392,3.650432,4.161477,0.496427,-0.305999,0.208101,0.511045,0.481809
+South Korea,aegypti,6.179484,5.829604,8.63502,8.887218,3.389459,4.026171,3.397198,4.042868,3.404936,4.057614,0.64567,-0.34988,0.252198,0.652678,0.636711
+South Korea,albopictus,5.30532,5.06664,9.261184,9.527266,4.948283,5.460626,4.952073,5.460626,4.955864,5.460626,0.508552,-0.23868,0.266082,0.504762,0.512343

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download figures, summary tables, and provenance records for the Korean Peninsula Aedes suitability project.">
+  <meta name="theme-color" content="#17333b">
+  <title>Data &amp; products · Korean Peninsula Aedes Suitability</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to downloads</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Korea Aedes Suitability</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Results</a>
+        <a href="methods.html">Methods</a>
+        <a href="data.html" aria-current="page">Data &amp; products</a>
+        <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <p class="eyebrow">Open products</p>
+      <h1>Download the figures and the data behind each headline</h1>
+      <p class="page-lead">Website summaries are compact publication views. The repository retains the complete cell-year, cell-period, monthly, missingness, provenance, and audit outputs.</p>
+    </header>
+
+    <section class="section">
+      <h2>Summary data</h2>
+      <div class="download-list">
+        <article class="product-card">
+          <span class="tag">JSON</span>
+          <h3>Project summary</h3>
+          <p>Headline suitability, population-exposure, evidence-count, effort, and audit fields used by this site.</p>
+          <a class="download-link" href="assets/data/project_summary.json" download>Download project_summary.json</a>
+        </article>
+        <article class="product-card">
+          <span class="tag">CSV</span>
+          <h3>Suitability change summary</h3>
+          <p>Early and recent suitable months, onset, end, span, and contiguous-run change for each geography and species.</p>
+          <a class="download-link" href="assets/data/suitability_change_summary.csv" download>Download suitability_change_summary.csv</a>
+        </article>
+        <article class="product-card">
+          <span class="tag">CSV</span>
+          <h3>Population exposure change</h3>
+          <p>Recent ambient population, shares in increasing cells, weighted changes, coverage, and interpretation fields.</p>
+          <a class="download-link" href="assets/data/population_exposure_change.csv" download>Download population_exposure_change.csv</a>
+        </article>
+        <article class="product-card">
+          <span class="tag">CSV</span>
+          <h3>Pooled trap indices</h3>
+          <p>Six site rows with coordinates, periods, effort, published index, provenance, and license.</p>
+          <a class="download-link" href="assets/data/pooled_trap_indices.csv" download>Download pooled_trap_indices.csv</a>
+        </article>
+        <article class="product-card">
+          <span class="tag">JSON</span>
+          <h3>Publication product manifest</h3>
+          <p>Input and output paths, SHA-256 checksums, file sizes, evidence-separation checks, and interpretation boundary.</p>
+          <a class="download-link" href="assets/data/publication_product_manifest.json" download>Download publication_product_manifest.json</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <h2>Publication figures</h2>
+      <p class="page-lead">SVG files are optimized for responsive web and publication layouts; PNG files are provided for slides, issue threads, and social previews.</p>
+      <div class="data-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>What it shows</th><th>Downloads</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Suitability change map</td><td>Cell-level recent-minus-early suitable-month change by species.</td><td><a href="assets/figures/suitability-change-map.svg" download>SVG</a> · <a href="assets/figures/suitability-change-map.png" download>PNG</a></td></tr>
+            <tr><td>Seasonal profile shift</td><td>Area-weighted monthly suitability in the early and recent periods.</td><td><a href="assets/figures/seasonal-profile-shift.svg" download>SVG</a> · <a href="assets/figures/seasonal-profile-shift.png" download>PNG</a></td></tr>
+            <tr><td>Population exposure map</td><td>Modeled change with proportional recent ambient-population circles.</td><td><a href="assets/figures/population-exposure-map.svg" download>SVG</a> · <a href="assets/figures/population-exposure-map.png" download>PNG</a></td></tr>
+            <tr><td>Population exposure summary</td><td>Recent population shares and population-weighted changes by scope.</td><td><a href="assets/figures/population-exposure-summary.svg" download>SVG</a> · <a href="assets/figures/population-exposure-summary.png" download>PNG</a></td></tr>
+            <tr><td>ROK Aedes evidence map</td><td>Presence-only occurrences, collection year, and six pooled trap sites.</td><td><a href="assets/figures/rok-aedes-evidence-map.svg" download>SVG</a> · <a href="assets/figures/rok-aedes-evidence-map.png" download>PNG</a></td></tr>
+            <tr><td>Pooled trap indices</td><td>Published female trap index and explicit common effort context.</td><td><a href="assets/figures/pooled-trap-indices.svg" download>SVG</a> · <a href="assets/figures/pooled-trap-indices.png" download>PNG</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Evidence and interpretation matrix</h2>
+      <div class="data-table-wrap">
+        <table>
+          <thead>
+            <tr><th>Evidence type</th><th>Spatial / temporal unit</th><th>Supported interpretation</th><th>Not supported</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Modeled suitability</td><td>0.25° cell, month, 1975–2024</td><td>Relative environmental suitability and suitable-month classification.</td><td>Confirmed presence, abundance, infection, or transmission probability.</td></tr>
+            <tr><td>Population exposure</td><td>0.25° cell-period, fixed decades</td><td>Ambient population coinciding with modeled suitability patterns.</td><td>People at risk, cases, incidence, or individual exposure.</td></tr>
+            <tr><td>ROK occurrence</td><td>Source event or month, point location</td><td>Reviewed presence-only evidence at a reported place and time.</td><td>Absence, prevalence, standardized abundance, or effort comparison.</td></tr>
+            <tr><td>ROK trap index</td><td>Six sites, pooled 2013–2014 seasonal windows</td><td>Source-reported relative female abundance with explicit trap effort.</td><td>Monthly raw counts, national abundance, disease outcomes, or DPRK validation.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <h2>Primary sources and provenance</h2>
+      <div class="three-up">
+        <article class="product-card">
+          <h3>Suitability model</h3>
+          <p>Author-linked Zenodo record 21924442, version 2.0.</p>
+          <a class="download-link" href="https://zenodo.org/records/21924442">Open source record</a>
+        </article>
+        <article class="product-card">
+          <h3>Ambient population</h3>
+          <p>LandScan Mosaic Annual Global Ambient Population Time Series, version 1.0.</p>
+          <a class="download-link" href="https://doi.org/10.48690/lsm/zew2-1n91">Open dataset DOI</a>
+        </article>
+        <article class="product-card">
+          <h3>Trap indices</h3>
+          <p>Kim et al. (2018), source Tables 1, 2, and 4 and methods.</p>
+          <a class="download-link" href="https://doi.org/10.1111/1748-5967.12314">Open article DOI</a>
+        </article>
+      </div>
+      <p>The repository <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability/tree/main/metadata">metadata directory</a> records source registries, query policy, run parameters, checksums, licensing, and exclusion decisions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p>Downloadable products retain interpretation fields and are intended for reproducible regional research.</p>
+      <div class="footer-links">
+        <a href="index.html">Results</a>
+        <a href="methods.html">Methods</a>
+        <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability">Repository</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

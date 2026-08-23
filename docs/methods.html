@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Methods, quality controls, and interpretation boundaries for the Korean Peninsula Aedes suitability project.">
+  <meta name="theme-color" content="#17333b">
+  <title>Methods · Korean Peninsula Aedes Suitability</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to methods</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Korea Aedes Suitability</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Results</a>
+        <a href="methods.html" aria-current="page">Methods</a>
+        <a href="data.html">Data &amp; products</a>
+        <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-hero">
+      <p class="eyebrow">Methods and interpretation</p>
+      <h1>Designed to make the evidence boundary inspectable</h1>
+      <p class="page-lead">The workflow preserves the source grid, defines fixed comparison periods, audits every population join, and keeps occurrence and effort-aware trap indices in separate observation models.</p>
+    </header>
+
+    <section class="section">
+      <article class="prose">
+        <h2>1. Modeled environmental suitability</h2>
+        <p>The analysis uses Climademic Suitability Model version 2.0 for <i>Aedes aegypti</i> and <i>Aedes albopictus</i>. The source contains monthly layers for 1975–2024 on a 0.25° EPSG:4326 grid. Cells are selected when their center falls inside the Natural Earth country polygon for North Korea or South Korea.</p>
+        <p>Monthly scores at or above 0.5 are classified as suitable, preserving the source model’s decision boundary. A suitable-month count is the number of classified calendar months in a complete cell-year; it is not a precise biological onset date or transmission-season duration.</p>
+
+        <h3>Spatial and temporal aggregation</h3>
+        <ul>
+          <li>Primary regional means use cosine(latitude) area weights.</li>
+          <li>Comparison periods are 1975–1984, 1995–2004, and 2015–2024.</li>
+          <li>Early-to-recent change means 2015–2024 minus 1975–1984.</li>
+          <li>The selected grid contains 215 DPRK cells and 155 ROK cells.</li>
+          <li>DPRK values are labeled modeled extrapolation because no direct DPRK observations are included.</li>
+        </ul>
+
+        <h2>2. Population exposure</h2>
+        <p>The population application uses the LandScan Mosaic Annual Global Ambient Population Time Series for 1975–2024. Fine-grid ambient population values were summed within each public 0.25° analysis cell. Period population is the ten-year mean of annual cell totals.</p>
+        <p>Population-weighted metrics describe the overlap between ambient population and modeled suitability. The change table uses recent-period ambient population to summarize the share located in cells with increasing suitable-month count, longer suitable span, or longer contiguous run.</p>
+
+        <h3>Independent audit contract</h3>
+        <ul>
+          <li>Complete cell-year input inventory and no duplicate cell-year rows.</li>
+          <li>No negative, nonnumeric, or non-finite population values.</li>
+          <li>100% cell-period coverage for all 370 cells.</li>
+          <li>Cell-level outputs reconcile exactly with period and change summaries.</li>
+          <li>Population shares remain between zero and one.</li>
+          <li>Provenance paths and SHA-256 checksums are recorded.</li>
+        </ul>
+
+        <h2>3. ROK Aedes observations</h2>
+        <p>The occurrence table contains reviewed presence-only records with species, taxonomic basis, coordinates, collection date or month, source, and license. Standardized sampling effort remains blank where the source did not report it. These rows cannot support non-detection or abundance inference.</p>
+        <p>The trap-abundance table remains a separate input. Six retained Kim et al. (2018) site rows preserve fixed-site coordinates, collection periods, trap type, trap-night effort, trap-hour effort, published female trap index, taxonomy, source table, URL, and license.</p>
+
+        <h3>Pooled trap-index semantics</h3>
+        <ul>
+          <li>One row per retained site, pooled over April–November 2013 and April–November 2014.</li>
+          <li>32 trap-nights and 448 trap-hours per site-period row.</li>
+          <li>Published unit: female mosquitoes per trap-night.</li>
+          <li>No monthly expansion and no reconstruction of rounded raw specimen counts.</li>
+          <li>A source-specific observation model is required before inference.</li>
+        </ul>
+
+        <h2>4. Missingness and uncertainty</h2>
+        <p>The selected suitability cells have complete monthly coverage for the three comparison periods under the documented missing-value rule. Complete coverage does not remove model uncertainty. The source release does not include a per-cell uncertainty layer, so quantiles and standard deviations describe variation among cells and years rather than confidence intervals.</p>
+        <p>LandScan historical layers are scenario-based reconstructions anchored to a benchmark and do not include cell-level uncertainty bands in this application. Population figures should be treated as ambient-population indicators rather than exact census totals.</p>
+
+        <h2>5. Interpretation limits</h2>
+        <p>The products are unsuitable for installation-level decisions, clinical guidance, individual risk estimates, or operational early warning. They do not estimate mosquito infection, human cases, disease incidence, transmission probability, or intervention effectiveness.</p>
+        <p>ROK records do not validate DPRK predictions. A future model-performance study requires reviewed event-level effort, non-detections where available, spatial and temporal holdouts, calibration assessment, and uncertainty reporting.</p>
+
+        <h2>Reproduce the publication layer</h2>
+        <pre><code>python scripts/build_publication_products.py
+python scripts/audit_publication_products.py</code></pre>
+        <p>Core suitability, population, and ROK Aedes preparation commands are documented in the repository README and protocol reports.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p>Methods are versioned with the analysis code, source registries, run metadata, and independent audit outputs.</p>
+      <div class="footer-links">
+        <a href="index.html">Results</a>
+        <a href="data.html">Data &amp; products</a>
+        <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability/tree/main/reports">Protocol reports</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

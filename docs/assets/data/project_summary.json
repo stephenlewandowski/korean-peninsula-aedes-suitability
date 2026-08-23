@@ -1,0 +1,64 @@
+{
+  "status": "publication_products_built_from_audited_outputs",
+  "analysis_period": "1975-2024",
+  "comparison_periods": [
+    "1975-1984",
+    "1995-2004",
+    "2015-2024"
+  ],
+  "grid_cells": 370,
+  "north_korea_cells": 215,
+  "south_korea_cells": 155,
+  "suitability": {
+    "aegypti": {
+      "early_mean_suitable_months": 2.669411,
+      "recent_mean_suitable_months": 3.238187,
+      "change_months": 0.568776,
+      "onset_change_calendar_month": -0.19423,
+      "end_change_calendar_month": 0.196193
+    },
+    "albopictus": {
+      "early_mean_suitable_months": 4.212059,
+      "recent_mean_suitable_months": 4.713721,
+      "change_months": 0.501661,
+      "onset_change_calendar_month": -0.276965,
+      "end_change_calendar_month": 0.233241
+    }
+  },
+  "population_exposure": {
+    "aegypti": {
+      "recent_mean_annual_ambient_population_observed_cells": 75931971.067556,
+      "share_recent_population_in_cells_with_increasing_suitable_month_count": 0.955727,
+      "population_weighted_suitable_month_count_delta": 0.457421
+    },
+    "albopictus": {
+      "recent_mean_annual_ambient_population_observed_cells": 75931971.067556,
+      "share_recent_population_in_cells_with_increasing_suitable_month_count": 0.987605,
+      "population_weighted_suitable_month_count_delta": 0.362431
+    }
+  },
+  "rok_aedes_evidence": {
+    "occurrence_records": 54,
+    "occurrence_year_min": 2007,
+    "occurrence_year_max": 2024,
+    "trap_index_rows": 6,
+    "trap_sites": 6,
+    "trap_nights_per_row": 32,
+    "trap_hours_per_row": 448.0,
+    "total_trap_nights": 192,
+    "total_trap_hours": 2688.0,
+    "trap_periods": [
+      "2013-04-01/2013-11-30",
+      "2014-04-01/2014-11-30"
+    ],
+    "trap_value_semantics": "source-reported pooled female trap index; not raw counts",
+    "audit_status": "ready_for_model_review"
+  },
+  "quality": {
+    "population_audit_status": "PASS",
+    "population_coverage_fraction": 1.0,
+    "aedes_audit_status": "ready_for_model_review",
+    "per_cell_model_uncertainty": "not supplied by source release"
+  },
+  "interpretation_boundary": "Modeled environmental suitability and population exposure indicators only; not observed vector abundance outside the six trap sites, disease risk, incidence, infection probability, or transmission forecasts."
+}

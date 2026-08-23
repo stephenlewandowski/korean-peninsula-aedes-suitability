@@ -6,8 +6,8 @@ and restricts the primary product to North Korea and South Korea. Japan is now
 maintained as the separate IDEA-0007 comparator; Anopheles/malaria work is the
 separate IDEA-0008 feasibility project.
 
-**Status:** draft static prototype and follow-on application package for repository review; not a released public product.  
-**Visibility:** `public_candidate`; website promotion and any hosted interactive output remain separate decisions.  
+**Status:** audited static analysis package with a GitHub Pages-ready publication site; not an operational disease-risk product.
+**Visibility:** `public_candidate`; merging the Pages workflow to `main` makes the static website deployable through GitHub Actions.
 **Data currency:** source release and boundary files retrieved 2026-08-19; analysis covers 1975–2024.
 
 The product covers 1975–2024 on the source 0.25° grid for *Aedes aegypti* and *Aedes albopictus*. It provides:
@@ -19,7 +19,31 @@ The product covers 1975–2024 on the source 0.25° grid for *Aedes aegypti* and
 - missingness and aggregation diagnostics; and
 - static maps of mean annual suitability, suitable-month count, and early-to-recent change.
 
-The initial application deliberately remains static. The tables and side-by-side maps provide the defined geography and period comparisons without a time slider or location selector that could imply unsupported sub-grid precision. A future control should be added only if it supports a clearly bounded comparison task.
+The application deliberately remains static. The tables, publication figures,
+and responsive project website provide the defined geography and period
+comparisons without a time slider or location selector that could imply
+unsupported sub-grid precision.
+
+## Project website
+
+The GitHub Pages source is in `docs/`. It presents the audited suitability,
+population-exposure, occurrence, and pooled trap-index products as separate
+evidence classes, with downloadable SVG/PNG figures and compact CSV/JSON
+summaries. The deployment workflow is `.github/workflows/pages.yml` and runs
+when the website is changed on `main` or when manually dispatched.
+
+Build and audit the publication products with:
+
+```bash
+python scripts/build_publication_products.py
+python scripts/audit_publication_products.py
+```
+
+For a local preview:
+
+```bash
+python -m http.server 8000 --directory docs
+```
 
 ## Korea-first sequence
 
@@ -37,9 +61,11 @@ The active work sequence is:
    lag, out-of-sample, calibration, uncertainty, and decision-threshold gates
    are met.
 
-The current branch implements the scope separation and the first data-readiness
-contracts. It does not fabricate LandScan, surveillance, driver, or
-early-warning results when those inputs are absent.
+The current branch closes the LandScan population-exposure gate, adds reviewed
+ROK occurrence and effort-aware pooled trap-index inputs, prepares separate
+model-input matrices, and publishes audited figures and summaries. It still
+does not fabricate surveillance, driver, early-warning, Anopheles event-level,
+non-detection, or effort-denominator results when those inputs are absent.
 
 ## Initial Korea-only result
 
@@ -91,6 +117,9 @@ by bounded tables and side-by-side maps.
 - `scripts/analyze_korea_japan.py` — explicit Korea, Japan, or archived combined extraction, season metrics, tables, and static figures.
 - `scripts/validate_korea_japan.py` — scoped output-contract validation.
 - `scripts/audit_rok_aedes.py` — ROK Aedes observation schema and readiness audit.
+- `scripts/prepare_rok_aedes_model_input.py` — separate occurrence and pooled effort-aware trap-index design matrices.
+- `scripts/build_publication_products.py` — reproducible website maps, figures, and downloadable summaries.
+- `scripts/audit_publication_products.py` — independent reconciliation, asset, link, claim, and deployment audit.
 - `scripts/build_cell_grid_geojson.py` — scoped public polygon grid for external joins.
 - `reports/korea_regional_brief.md` — concise results brief with tables.
 - `reports/korea_first_static_results.md` — Korea-first scoped result table and coverage note.
@@ -101,6 +130,7 @@ by bounded tables and side-by-side maps.
 - `reports/driver_analysis_protocol.md` — heat, humidity, land-use, population, and collinearity protocol.
 - `reports/early_warning_protocol.md` — non-operational out-of-sample evaluation gate.
 - `reports/rok_aedes_validation_protocol.md` — ROK observation separation and holdout gate.
+- `reports/publication_analysis_summary.md` — public-facing findings, bounded impact statements, and remaining evidence gaps.
 - `teaching/IDEA-0006-climademic-model-interpretation.md` — reproducible senior-level teaching case.
 - `metadata/korea_analysis_run_metadata.json` — source hashes, scope, grid, and method parameters.
 - `metadata/korea_japan_run_metadata.json` — Korea–Japan source hashes, scope, and method parameters.
@@ -125,6 +155,15 @@ by bounded tables and side-by-side maps.
 - `outputs/maps/korea_suitable_months_change_early_to_recent.png`
 - `outputs/maps/korea_monthly_suitability_heatmap.png`
 
+The GitHub Pages publication gallery is under `docs/assets/figures/` and adds:
+
+- `suitability-change-map.svg` / `.png`
+- `seasonal-profile-shift.svg` / `.png`
+- `population-exposure-map.svg` / `.png`
+- `population-exposure-summary.svg` / `.png`
+- `rok-aedes-evidence-map.svg` / `.png`
+- `pooled-trap-indices.svg` / `.png`
+
 The Korea–Japan outputs are under `outputs/korea_japan/`, including:
 
 - `tables/korea_japan_monthly_suitability.csv`
@@ -144,20 +183,18 @@ population export is written as `outputs/korea_focus/korea_focus_cell_grid.geojs
 
 ## Additional data applications
 
-The repository includes code and templates for the next applications, but their
-results are source-gated:
+The repository now includes completed population-exposure and ROK Aedes
+data-readiness products alongside still source-gated follow-on analyses:
 
-- `scripts/prepare_population_exposure.py --scope korea` joins a checked
-  LandScan ambient population export to the Korea-only public grid. It reports
-  people in cells with increasing suitability or longer modeled seasons; it
-  does not estimate disease incidence or individual risk. The required export
-  is documented in `inputs/landscan_population_by_cell_year.template.csv`;
-  upload the Korea-only polygon grid generated by
-  `scripts/build_cell_grid_geojson.py --scope korea` and use
-  `scripts/landscan_gee_export.js` for the Earth Engine export.
-- `scripts/audit_rok_aedes.py` checks the separate ROK Aedes observation schema;
-  `inputs/aedes_observations.template.csv` is deliberately empty until public
-  records are assembled and reviewed.
+- `scripts/prepare_population_exposure.py --scope korea` joins the reviewed
+  LandScan ambient-population export to the Korea-only public grid. The strict
+  run and independent audit pass with complete coverage and reconciliation.
+  Results remain population-exposure indicators, not disease incidence or
+  individual risk.
+- `scripts/audit_rok_aedes.py` passes for 54 reviewed presence-only occurrence
+  records and six separate effort-aware trap-index rows. The trap rows are
+  pooled across April–November 2013 and 2014, retain 32 trap-nights and 448
+  trap-hours per site, and are not monthly raw counts.
 - `scripts/analyze_surveillance_lags.py` compares a tidy public monthly vector
   or disease indicator with suitability at explicit leads/lags while retaining
   reporting-change notes. The KDCA and Goyang leads are Anopheles/malaria
@@ -171,9 +208,10 @@ results are source-gated:
   bootstrap intervals, uncertainty bounds when available, and a provisional
   threshold explicitly marked non-operational.
 
-The source-gated scripts stop with a clear missing-input message until their
-input templates are populated and reviewed. This keeps an unverified
-surveillance or population join from being presented as a completed result.
+The remaining source-gated scripts stop with a clear missing-input message
+until their input templates are populated and reviewed. This keeps unverified
+surveillance, driver, early-warning, or Anopheles event-level data from being
+presented as completed results.
 
 ## Re-run
 
@@ -197,4 +235,9 @@ without direct DPRK observations is modeled extrapolation.
 
 ## Human review boundary
 
-The repository owner authorized initial development of this Korea-only static application on 2026-08-20 by requesting the project and its reproducible code. Conclusions, public wording, source verification, AI disclosure, and any release or website feature require subsequent human review. No `PUB-####` release record is created by this prototype.
+The repository owner authorized continued development, commits, publication
+figures, impact statements, and a GitHub Pages-ready website. Merging to the
+default branch can trigger deployment through the committed workflow. The
+owner remains responsible for final release labeling, source verification,
+AI disclosure, and any formal `PUB-####` record. The website does not convert
+the products into operational disease-risk guidance.
