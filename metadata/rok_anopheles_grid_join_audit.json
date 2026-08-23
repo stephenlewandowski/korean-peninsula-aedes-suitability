@@ -1,0 +1,27 @@
+{
+  "generated_utc": "2026-08-23T04:31:12+00:00",
+  "observation_table": "inputs\\rok_anopheles_sinensis_pcr_observations.csv",
+  "total_rows": 488,
+  "exact_grid_join_rows": 238,
+  "outside_current_grid_rows": 250,
+  "grid_cell_count": 370,
+  "policy": "Use exact polygon joins only; exclude non-intersecting records from grid-linked analysis and retain them in the ROK evidence table.",
+  "nearest_cell_imputation": false,
+  "source_counts": {
+    "RUEDA_2006_ROK_1998_2004": 45,
+    "KIM_2007_ROK_2005_SURVEY": 88,
+    "USFK_2005_INSTALLATION_SURVEY": 9,
+    "KLEIN_2006_FIELD_COLLECTION": 82,
+    "HONG_2023_GIMPO_GANGHWA": 118,
+    "JEON_2025_GANGHWA_2024": 146
+  },
+  "year_counts_outside_grid": {
+    "2001": 1,
+    "2003": 6,
+    "2004": 5,
+    "2005": 2,
+    "2006": 1,
+    "2023": 89,
+    "2024": 146
+  }
+}

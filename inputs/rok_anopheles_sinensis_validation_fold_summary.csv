@@ -1,0 +1,22 @@
+validation_axis,holdout,train_rows,test_rows,train_groups,test_groups,group_overlap,all_groups,predictive_metrics_eligible,eligibility_note
+site_blocked_spatial,site_fold_0,357,131,155,1,0,156,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+site_blocked_spatial,site_fold_1,398,90,154,2,0,156,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+site_blocked_spatial,site_fold_2,399,89,106,50,0,156,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+site_blocked_spatial,site_fold_3,399,89,104,52,0,156,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+site_blocked_spatial,site_fold_4,399,89,105,51,0,156,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+0p1deg_blocked_spatial_sensitivity,block_fold_0,252,236,84,1,0,85,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+0p1deg_blocked_spatial_sensitivity,block_fold_1,425,63,65,20,0,85,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+0p1deg_blocked_spatial_sensitivity,block_fold_2,425,63,64,21,0,85,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+0p1deg_blocked_spatial_sensitivity,block_fold_3,425,63,64,21,0,85,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+0p1deg_blocked_spatial_sensitivity,block_fold_4,425,63,63,22,0,85,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_1998,486,2,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_1999,480,8,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2001,480,8,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2002,483,5,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2003,471,17,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2004,483,5,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2005,391,97,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2006,406,82,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2022,462,26,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2023,396,92,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.
+year_blocked_temporal,year_holdout_2024,342,146,10,1,0,11,False,Presence-only evidence; no non-detection/effort-standardized response is available for a predictive metric.

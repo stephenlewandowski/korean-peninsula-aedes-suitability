@@ -1,0 +1,119 @@
+{
+  "generated_utc": "2026-08-23T04:31:12+00:00",
+  "target_species": "Anopheles sinensis",
+  "country": "South Korea",
+  "observation_table": "inputs\\rok_anopheles_sinensis_pcr_observations.csv",
+  "longitudinal_table": "inputs\\rok_anopheles_sinensis_longitudinal_validation.csv",
+  "observation_rows": 488,
+  "unique_sites": 156,
+  "unique_spatial_blocks_0p1deg": 85,
+  "direct_observation_years": [
+    1998,
+    1999,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2022,
+    2023,
+    2024
+  ],
+  "source_counts": {
+    "HONG_2023_GIMPO_GANGHWA": 118,
+    "JEON_2025_GANGHWA_2024": 146,
+    "KIM_2007_ROK_2005_SURVEY": 88,
+    "KLEIN_2006_FIELD_COLLECTION": 82,
+    "RUEDA_2006_ROK_1998_2004": 45,
+    "USFK_2005_INSTALLATION_SURVEY": 9
+  },
+  "year_counts": {
+    "1998": 2,
+    "1999": 8,
+    "2001": 8,
+    "2002": 5,
+    "2003": 17,
+    "2004": 5,
+    "2005": 97,
+    "2006": 82,
+    "2022": 26,
+    "2023": 92,
+    "2024": 146
+  },
+  "molecular_status_counts": {
+    "molecular_DNA_layer_record_protocol_pending": 91,
+    "molecular_DNA_source_record": 45,
+    "source_confirmed_molecular_ITS2": 88,
+    "verified_PCR_or_ITS2_source_table": 239,
+    "verified_species_source_table_method_not_printed": 25
+  },
+  "missing_required_fields": {
+    "record_id": 0,
+    "source_id": 0,
+    "species": 0,
+    "country": 0,
+    "site_id": 0,
+    "spatial_block_id": 0,
+    "longitude": 0,
+    "latitude": 0,
+    "year": 0,
+    "value": 0,
+    "sampling_effort": 0,
+    "taxonomic_basis": 0,
+    "pcr_confirmation_status": 0,
+    "presence_absence_status": 0
+  },
+  "duplicate_record_ids": 0,
+  "wrong_species_rows": 0,
+  "wrong_country_rows": 0,
+  "missing_grid_cell_rows": 250,
+  "absence_or_non_detection_rows": 0,
+  "effort_standardized_rows": 0,
+  "published_aggregate_context_rows": 2,
+  "site_blocked_spatial": {
+    "folds": 5,
+    "group_field": "site_id",
+    "group_overlap_max": 0,
+    "partitions_disjoint": true,
+    "predictive_metrics_eligible": false
+  },
+  "0p1deg_blocked_spatial_sensitivity": {
+    "folds": 5,
+    "group_field": "spatial_block_id",
+    "group_overlap_max": 0,
+    "partitions_disjoint": true,
+    "predictive_metrics_eligible": false
+  },
+  "year_blocked_temporal": {
+    "holdout_years": [
+      1998,
+      1999,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2022,
+      2023,
+      2024
+    ],
+    "group_field": "year",
+    "group_overlap_max": 0,
+    "partitions_disjoint": true,
+    "predictive_metrics_eligible": false
+  },
+  "predictive_gate": {
+    "status": "NOT_PASSED",
+    "reasons": [
+      "No reviewed non-detection/absence rows are present.",
+      "No response rows have a harmonized effort denominator."
+    ],
+    "interpretation": "The table is suitable for provenance review and construction of leakage-safe holdout partitions. It is not yet a presence/absence or effort-standardized response table for model performance metrics."
+  },
+  "outputs": {
+    "fold_manifest": "inputs\\rok_anopheles_sinensis_validation_fold_manifest.csv",
+    "fold_summary": "inputs\\rok_anopheles_sinensis_validation_fold_summary.csv"
+  }
+}
