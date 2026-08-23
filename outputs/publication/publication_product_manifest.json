@@ -1,0 +1,128 @@
+{
+  "generated_utc": "2026-08-23T09:21:02+00:00",
+  "status": "PASS",
+  "purpose": "GitHub Pages publication figures and bounded analysis summaries",
+  "inputs": {
+    "grid": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\korea_focus_cell_grid.geojson",
+      "sha256": "f8d330c861ecf1bde42e4918a1ccefdc0166be7914646eb61ded852da8aee94e"
+    },
+    "cell_period": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\tables\\korea_focus_cell_decadal_season.csv.gz",
+      "sha256": "e7d5b6e0938a2322f4efe44ec0c5d8418edfcfe4839002571320b47c3c3e0a93"
+    },
+    "monthly": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\tables\\korea_focus_monthly_suitability.csv",
+      "sha256": "ea8dbae8820c23c7eb652093963d03df110ad4aae2c1da9d720e207f1617bced"
+    },
+    "seasonal_change": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\tables\\korea_focus_seasonal_change_early_to_recent.csv",
+      "sha256": "c23a3739389f5a962c81a7f9ee047acf0b461849da4416e1d51456824f7a1f4c"
+    },
+    "population_cell_period": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus_population\\population_cell_period.csv.gz",
+      "sha256": "40d9b686bcf590a48c613c0bb0214f7fc17a4d09002e53773410aa627889b560"
+    },
+    "population_change": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus_population\\population_exposure_change_early_to_recent.csv",
+      "sha256": "9c5065514f39642997a1750ddd296d0b387b7b58c56a342a94fc46a1e3213044"
+    },
+    "population_audit": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus_population\\population_exposure_audit.json",
+      "sha256": "b10e14b79cbb6a8cd9668cf355e9fcc3d6ade070b3cd5265250988363f8e06cc"
+    },
+    "observations": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\aedes_observations.csv",
+      "sha256": "7f4b7723520333207038d4e8542503d856ca661e893a2e687dd08da666f7857f"
+    },
+    "traps": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\aedes_trap_abundance.csv",
+      "sha256": "65b0e78afc4b359b6306dc29a0cd705c85cd77dbd2b0201490cdf0f0ece54813"
+    },
+    "aedes_audit": {
+      "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\rok_aedes_validation\\rok_aedes_observation_audit_metadata.json",
+      "sha256": "56a25e5e799388549bcbabba88b4f532c125b634440cb89499e1e5dd0dd81dda"
+    }
+  },
+  "outputs": {
+    "docs\\assets\\figures\\suitability-change-map.svg": {
+      "sha256": "c692c10fcd14b42bd20ce8aefcf670d1929e9d0458b0f7630b873925db675839",
+      "bytes": 163517
+    },
+    "docs\\assets\\figures\\suitability-change-map.png": {
+      "sha256": "61eb367f3cce53c3e14b7aef2d355342bf02cdef6d996285dc84a1e64b40b711",
+      "bytes": 104050
+    },
+    "docs\\assets\\figures\\seasonal-profile-shift.svg": {
+      "sha256": "377661da5ec67391731ab6d6b4bfbd85e8da180c67fb699c98cac4b48783a680",
+      "bytes": 34745
+    },
+    "docs\\assets\\figures\\seasonal-profile-shift.png": {
+      "sha256": "ad6a0162664578d2a01a1602c210dc97e9ad762c5276276b2de18eeaccb07a69",
+      "bytes": 182671
+    },
+    "docs\\assets\\figures\\population-exposure-map.svg": {
+      "sha256": "18ac1e05c9bfb103f2137a42f727f9ccb05aabe624f0a7a3233b6abe67c06ffe",
+      "bytes": 728209
+    },
+    "docs\\assets\\figures\\population-exposure-map.png": {
+      "sha256": "ff0697346d1e51d3d1ba1c0646289c673e24fc1d5f13832a6569fbc44ffed3fe",
+      "bytes": 278565
+    },
+    "docs\\assets\\figures\\population-exposure-summary.svg": {
+      "sha256": "b46692c5448a6c923ef7afdcd4db42d160c40f0b5d350121f9cc46f2247c4f19",
+      "bytes": 21450
+    },
+    "docs\\assets\\figures\\population-exposure-summary.png": {
+      "sha256": "97dfe605ae11217a5f1b7317195516ea9c3820c66fd0ddca26f9f0b36901f06d",
+      "bytes": 124878
+    },
+    "docs\\assets\\figures\\rok-aedes-evidence-map.svg": {
+      "sha256": "48772152a442793e3d75b6b48e3548542d5079f4067d025a8f0c003c4d73965c",
+      "bytes": 92489
+    },
+    "docs\\assets\\figures\\rok-aedes-evidence-map.png": {
+      "sha256": "5f3ccba49dc4e64d8d46f22f666779e8fca9098b3b1ba06a61b2813cd173652a",
+      "bytes": 142539
+    },
+    "docs\\assets\\figures\\pooled-trap-indices.svg": {
+      "sha256": "b70b0cd8fea84318d513b399d9279c719b64efb28eaf0cbd5a367e7bc48e6174",
+      "bytes": 12759
+    },
+    "docs\\assets\\figures\\pooled-trap-indices.png": {
+      "sha256": "2427e64c62494519fb86da83ff9485840457d505c2f751b81e01abc9b9c197b4",
+      "bytes": 102969
+    },
+    "docs\\assets\\data\\project_summary.json": {
+      "sha256": "cf10eb9c2bc544d48221ec3abc4280570c5c47e3015379168d19dcb1531d7ec9",
+      "bytes": 2361
+    },
+    "docs\\assets\\data\\suitability_change_summary.csv": {
+      "sha256": "5f5de3d4ec3d87b210f8e269121fe2b379fe0e3a069f302959f756a01eb9c297",
+      "bytes": 1563
+    },
+    "docs\\assets\\data\\population_exposure_change.csv": {
+      "sha256": "570620557fe6db6ad1e920f3733d77c266f97d3a842719616f124cae2c7cc91b",
+      "bytes": 1750
+    },
+    "docs\\assets\\data\\pooled_trap_indices.csv": {
+      "sha256": "4eb0da1b372b4955efc3364ca2c024a8b8b74977ec33c951221ca9621e29536e",
+      "bytes": 2025
+    }
+  },
+  "checks": {
+    "population_audit_passed": true,
+    "aedes_audit_ready_for_model_review": true,
+    "occurrence_and_trap_rows_separate": true,
+    "trap_rows_are_six_pooled_site_period_indices": true,
+    "monthly_trap_rows_created": 0,
+    "raw_trap_counts_reconstructed": false,
+    "dprk_extrapolation_labeled": true,
+    "disease_interpretation_excluded": true
+  },
+  "interpretation_boundary": "Modeled environmental suitability and population exposure indicators only; not observed vector abundance outside the six trap sites, disease risk, incidence, infection probability, or transmission forecasts.",
+  "builder": {
+    "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\scripts\\build_publication_products.py",
+    "sha256": "225343fbc3195f077e51a4ab40b5b97a30de25a3dfe937f4c364fad90d04177f"
+  }
+}

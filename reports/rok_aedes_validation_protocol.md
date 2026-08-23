@@ -46,7 +46,29 @@ not prove vector presence outside observed cells or establish human risk.
 
 ## Current status
 
-The project contains the input schema, audit code, and review protocol. The
-source-gated result is not ready: public records still need to be assembled,
-licensed, normalized, and human-checked before model fitting or a validation
-figure is added.
+A source-field-reviewed import is now present at
+`inputs/aedes_observations.csv`. It contains 54 dated, georeferenced,
+presence-only *Aedes albopictus* records from four contributing GBIF datasets,
+covering 2007–2024. Forty-four records have an exact join to the current public
+Korea grid; ten retain valid coordinates but do not intersect that grid and
+remain flagged for spatial review. No standardized sampling-effort denominator
+is reported for these occurrence records, so `sampling_effort` is blank and no
+trap-abundance rate is inferred.
+
+The import is reproducible with
+`scripts/build_rok_aedes_observations.py`; source dataset metadata, licenses,
+occurrence identifiers, query policy, exclusions, and the output checksum are
+recorded in `metadata/rok_aedes_source_registry.json`. The audit command is:
+
+```bash
+python scripts/audit_rok_aedes.py \
+  --observations inputs/aedes_observations.csv \
+  --output-dir outputs/rok_aedes_validation
+```
+
+The audit status is `ready_for_model_review`. This does not authorize model
+fitting: a human scientific review of the source records and a separate
+effort-aware validation design are still required. The undated South Korea
+*Aedes aegypti* occurrence record was excluded because the required temporal
+fields were absent. Anopheles event-level validation remains a separate,
+blocked workstream.

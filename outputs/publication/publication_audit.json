@@ -1,0 +1,75 @@
+{
+  "generated_utc": "2026-08-23T09:21:03+00:00",
+  "status": "PASS",
+  "checks": {
+    "headline_values_reconcile_with_source_tables": true,
+    "population_exposure_language_is_bounded": true,
+    "occurrence_and_trap_inputs_remain_separate": true,
+    "six_trap_rows_remain_pooled_2013_2014_indices": true,
+    "trap_effort_reconciles_to_192_nights_2688_hours": true,
+    "monthly_trap_rows_created": 0,
+    "raw_trap_counts_reconstructed": false,
+    "six_svg_png_figure_pairs_are_valid": true,
+    "website_local_links_and_images_resolve": true,
+    "website_images_have_alt_text": true,
+    "github_pages_workflow_is_configured": true
+  },
+  "site": {
+    "pages": 3,
+    "local_links_checked": 35,
+    "images_checked": 6,
+    "page_sha256": {
+      "docs\\index.html": "93bddb72d7a176af6d1caf21ec7426433d55e3cf3a546c42ec5a5d3d51712c8d",
+      "docs\\methods.html": "06616a3124cd71fdeb24870b304619e928e98b9866a012240381b82dfb96197d",
+      "docs\\data.html": "7c9fa694a4468887f74ad2415aa979ae9e56693c782619f64896974df84808f2"
+    }
+  },
+  "figures": {
+    "suitability-change-map": {
+      "svg_sha256": "c692c10fcd14b42bd20ce8aefcf670d1929e9d0458b0f7630b873925db675839",
+      "png_sha256": "61eb367f3cce53c3e14b7aef2d355342bf02cdef6d996285dc84a1e64b40b711",
+      "svg_bytes": 163517,
+      "png_bytes": 104050
+    },
+    "seasonal-profile-shift": {
+      "svg_sha256": "377661da5ec67391731ab6d6b4bfbd85e8da180c67fb699c98cac4b48783a680",
+      "png_sha256": "ad6a0162664578d2a01a1602c210dc97e9ad762c5276276b2de18eeaccb07a69",
+      "svg_bytes": 34745,
+      "png_bytes": 182671
+    },
+    "population-exposure-map": {
+      "svg_sha256": "18ac1e05c9bfb103f2137a42f727f9ccb05aabe624f0a7a3233b6abe67c06ffe",
+      "png_sha256": "ff0697346d1e51d3d1ba1c0646289c673e24fc1d5f13832a6569fbc44ffed3fe",
+      "svg_bytes": 728209,
+      "png_bytes": 278565
+    },
+    "population-exposure-summary": {
+      "svg_sha256": "b46692c5448a6c923ef7afdcd4db42d160c40f0b5d350121f9cc46f2247c4f19",
+      "png_sha256": "97dfe605ae11217a5f1b7317195516ea9c3820c66fd0ddca26f9f0b36901f06d",
+      "svg_bytes": 21450,
+      "png_bytes": 124878
+    },
+    "rok-aedes-evidence-map": {
+      "svg_sha256": "48772152a442793e3d75b6b48e3548542d5079f4067d025a8f0c003c4d73965c",
+      "png_sha256": "5f3ccba49dc4e64d8d46f22f666779e8fca9098b3b1ba06a61b2813cd173652a",
+      "svg_bytes": 92489,
+      "png_bytes": 142539
+    },
+    "pooled-trap-indices": {
+      "svg_sha256": "b70b0cd8fea84318d513b399d9279c719b64efb28eaf0cbd5a367e7bc48e6174",
+      "png_sha256": "2427e64c62494519fb86da83ff9485840457d505c2f751b81e01abc9b9c197b4",
+      "svg_bytes": 12759,
+      "png_bytes": 102969
+    }
+  },
+  "provenance": {
+    "summary": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\docs\\assets\\data\\project_summary.json",
+    "summary_sha256": "cf10eb9c2bc544d48221ec3abc4280570c5c47e3015379168d19dcb1531d7ec9",
+    "product_manifest": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\publication\\publication_product_manifest.json",
+    "product_manifest_sha256": "6739fcf116e25960f15aaace314cbef13a85962012c766ee91f14423c17d824a",
+    "public_product_manifest": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\docs\\assets\\data\\publication_product_manifest.json",
+    "pages_workflow_sha256": "bd80b2b0976042037a7d4fdea9a07b523c1e67d54f528ed94b5aee5bc9ba8566"
+  },
+  "interpretation_boundary": "Publication products report modeled environmental suitability, population exposure, presence-only occurrence, and pooled effort-aware trap indices. They do not report disease risk, incidence, infection probability, or transmission forecasts.",
+  "errors": []
+}

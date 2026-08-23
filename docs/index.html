@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Audited maps and analysis of modeled Aedes environmental suitability and population exposure across the Korean Peninsula, 1975–2024.">
+  <meta name="theme-color" content="#17333b">
+  <title>Korean Peninsula Aedes Suitability</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to analysis</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html">Korea Aedes Suitability</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#suitability">Suitability</a>
+        <a href="#population">Population exposure</a>
+        <a href="#evidence">ROK evidence</a>
+        <a href="methods.html">Methods</a>
+        <a href="data.html">Data &amp; products</a>
+        <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-shell">
+      <p class="eyebrow">1975–2024 · 370 public grid cells · audited static evidence</p>
+      <h1 id="hero-title">A Korea-first view of changing Aedes environmental suitability</h1>
+      <p class="hero-lead">A reproducible regional analysis connecting modeled seasonal suitability, ambient population exposure, and source-reviewed ROK observations—without presenting any of them as disease risk.</p>
+      <div class="hero-actions">
+        <a class="button" href="#results">Explore the results</a>
+        <a class="button secondary" href="data.html">Download products</a>
+      </div>
+
+      <div class="metric-grid" id="results" aria-label="Headline results">
+        <div class="metric">
+          <span class="metric-value">+0.57</span>
+          <span class="metric-label">modeled suitable months per year for <i>Ae. aegypti</i>, peninsula early-to-recent</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">+0.50</span>
+          <span class="metric-label">modeled suitable months per year for <i>Ae. albopictus</i>, peninsula early-to-recent</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">95.6–98.8%</span>
+          <span class="metric-label">recent ambient population in cells with increasing suitable-month count, by species</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">54 + 6</span>
+          <span class="metric-label">reviewed ROK occurrence records plus separate pooled effort-aware trap-index sites</span>
+        </div>
+      </div>
+
+      <aside class="boundary" aria-label="Interpretation boundary">
+        <strong>Interpretation boundary:</strong> These are modeled environmental-suitability and population-exposure indicators. They are not disease incidence, infection probability, individual risk, transmission forecasts, or proof of vector presence outside the reviewed ROK observations.
+      </aside>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="section" id="suitability">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">Modeled suitability</span>
+          <h2>The modeled suitable season broadened across most selected cells</h2>
+        </div>
+        <p>Between 1975–1984 and 2015–2024, the peninsula-wide area-weighted mean increased by 0.57 months for <i>Ae. aegypti</i> and 0.50 months for <i>Ae. albopictus</i>. South Korea’s corresponding changes were +0.65 and +0.51 months.</p>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/figures/suitability-change-map.svg" alt="Two gridded Korean Peninsula maps showing early-to-recent change in modeled suitable months for Aedes aegypti and Aedes albopictus. Most cells show increases, with a small number of decreases.">
+        <figcaption>Recent (2015–2024) minus early (1975–1984) mean suitable-month count on the source 0.25° grid. DPRK cells are explicitly labeled as modeled extrapolation.</figcaption>
+      </figure>
+
+      <div class="two-up">
+        <div class="statement accent">
+          <h3>Analysis summary</h3>
+          <p>The expansion is visible in both the spatial pattern and the peninsula-wide seasonal profile. Recent-period means rise most clearly around May–June and September, indicating change in the modeled shoulders of the warm season.</p>
+        </div>
+        <div class="statement warning">
+          <h3>Bounded impact statement</h3>
+          <p>The result can support review of regional surveillance timing and where independent field validation would be most informative. It does not establish mosquito establishment, biting activity, or a longer disease-transmission season.</p>
+        </div>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/figures/seasonal-profile-shift.svg" alt="Two line charts comparing early and recent monthly area-weighted suitability for Aedes aegypti and Aedes albopictus across the Korean Peninsula.">
+        <figcaption>Area-weighted mean monthly suitability. The dotted 0.5 line is the source model’s decision threshold, not an observed entomological or epidemiological threshold.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section soft" id="population">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">Population exposure</span>
+          <h2>The population join passes complete-coverage and reconciliation checks</h2>
+        </div>
+        <p>The reviewed LandScan input covers every one of the 370 cells for 1975–2024. The independent audit reports 100% cell-period coverage, finite weighted metrics, bounded shares, reconciled totals, and recorded checksums.</p>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/figures/population-exposure-map.svg" alt="Two Korean Peninsula maps combining cell-level suitable-month change with proportional circles for recent mean ambient population, one map per Aedes species.">
+        <figcaption>Cell color shows modeled suitable-month change; circle area shows relative mean ambient population in 2015–2024. Circles are not case counts or estimates of people at risk.</figcaption>
+      </figure>
+
+      <div class="two-up">
+        <div class="statement accent">
+          <h3>Analysis summary</h3>
+          <p>Across the peninsula, 95.6% of recent ambient population was in cells with increasing <i>Ae. aegypti</i> suitable-month count and 98.8% was in cells with increasing <i>Ae. albopictus</i> suitable-month count. Population-weighted changes were +0.46 and +0.36 months, respectively.</p>
+        </div>
+        <div class="statement warning">
+          <h3>Bounded impact statement</h3>
+          <p>The overlap product makes regional adaptation and surveillance-planning questions more concrete by showing where modeled change and ambient population coincide. It cannot quantify disease burden, individual exposure, or health benefit.</p>
+        </div>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/figures/population-exposure-summary.svg" alt="Grouped bar charts showing the share of recent ambient population in cells with increasing suitable months and population-weighted suitable-month changes for North Korea, South Korea, and the peninsula.">
+        <figcaption>Audited population-exposure indicators for DPRK, ROK, and the combined peninsula. The historical population layers are reconstructions and do not include cell-level uncertainty bands.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="evidence">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">Source-reviewed ROK evidence</span>
+          <h2>Occurrence and trap-index records stay separate by design</h2>
+        </div>
+        <p>The evidence package contains 54 presence-only occurrence records from 2007–2024 and six effort-aware <i>Ae. albopictus</i> trap-index rows. The latter are site-level indices pooled across the April–November 2013 and 2014 seasonal windows.</p>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/figures/rok-aedes-evidence-map.svg" alt="Map of South Korea showing 54 presence-only Aedes occurrence points colored by year and six pooled trap-index sites, with an inset labeling the six trap sites.">
+        <figcaption>Presence-only occurrences have no standardized effort denominator. Trap sites retain their published locations, collection periods, licensing, trap-night effort, and trap-hour effort.</figcaption>
+      </figure>
+
+      <div class="two-up">
+        <div class="statement accent">
+          <h3>Effort is explicit</h3>
+          <p>Each trap row represents 32 trap-nights and 448 trap-hours. Across six sites, the imported effort totals 192 trap-nights and 2,688 trap-hours. The value is the published female trap index, not a reconstructed specimen count.</p>
+        </div>
+        <div class="statement limit">
+          <h3>The validation gap remains visible</h3>
+          <p>These ROK records do not validate modeled DPRK suitability. Opportunistic occurrence records also cannot be treated as abundance or non-detection data. Spatial and temporal holdouts remain necessary before model-performance claims.</p>
+        </div>
+      </div>
+
+      <figure class="figure">
+        <img src="assets/figures/pooled-trap-indices.svg" alt="Horizontal bars showing source-reported female Aedes albopictus trap indices at six South Korean sites. Values range from 0.1 to 0.9 mosquitoes per trap-night.">
+        <figcaption>Six retained Kim et al. (2018) source rows. Monthly counts were not fabricated from the pooled indices.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section soft" id="impact">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">Project impact</span>
+          <h2>A stronger foundation for regional monitoring and transparent follow-on research</h2>
+        </div>
+        <p>The project’s practical contribution is an auditable evidence package: bounded questions, reproducible products, explicit effort, complete population alignment, and clear gaps that future data collection can close.</p>
+      </div>
+      <div class="three-up">
+        <article class="statement accent">
+          <h3>Surveillance timing</h3>
+          <p>Seasonal-profile products identify months where modeled change is strongest, helping investigators formulate testable monitoring schedules rather than inferring exact vector-season dates.</p>
+        </article>
+        <article class="statement accent">
+          <h3>Regional prioritization</h3>
+          <p>Population-overlap products identify broad cells where independent observation and adaptation planning may have greater public relevance, while preserving the 0.25° spatial limit.</p>
+        </article>
+        <article class="statement warning">
+          <h3>Evidence-gap targeting</h3>
+          <p>The site makes absence of direct DPRK validation and effort-aware longitudinal data impossible to overlook, turning limitations into a concrete research agenda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="quality">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">Quality and provenance</span>
+          <h2>Every public headline traces to a versioned table or audit</h2>
+        </div>
+        <p>Figure and download checksums are recorded in the publication manifest. The website is generated from committed, reviewed products and can be rebuilt from the repository.</p>
+      </div>
+      <div class="three-up">
+        <article class="status-card">
+          <div class="status-row"><strong>Population gate</strong><span class="status-value">PASS</span></div>
+          <p>370 cells, complete target-period coverage, reconciled summaries, and SHA-256 provenance.</p>
+        </article>
+        <article class="status-card">
+          <div class="status-row"><strong>ROK Aedes audit</strong><span class="status-value">READY</span></div>
+          <p>60 total records across separate occurrence and pooled trap-index observation types.</p>
+        </article>
+        <article class="status-card">
+          <div class="status-row"><strong>Model uncertainty</strong><span class="status-value">LIMITED</span></div>
+          <p>The source release supplies no per-cell uncertainty layer; displayed spread is descriptive, not confidence.</p>
+        </article>
+      </div>
+      <div class="hero-actions">
+        <a class="button" href="methods.html">Read methods and limits</a>
+        <a class="button secondary" href="data.html">Browse downloadable products</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p>Korean Peninsula Aedes suitability · static, reproducible environmental-suitability and population-exposure analysis · 1975–2024.</p>
+      <div class="footer-links">
+        <a href="https://zenodo.org/records/21924442">Suitability source</a>
+        <a href="https://doi.org/10.48690/lsm/zew2-1n91">LandScan source</a>
+        <a href="https://doi.org/10.1111/1748-5967.12314">Trap-index source</a>
+        <a href="https://github.com/stephenlewandowski/korean-peninsula-aedes-suitability">Repository</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

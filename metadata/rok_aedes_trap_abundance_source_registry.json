@@ -1,0 +1,101 @@
+{
+  "generated_utc": "2026-08-23T06:08:20+00:00",
+  "review_status": "source Tables 1, 2, and 4 reviewed; one source row withheld",
+  "modeling_status": "effort-aware trap-index validation input; source-specific observation model required; not disease risk or incidence",
+  "source": {
+    "title": "Seasonal Prevalence of Mosquitoes Collected from Light Traps in Gyeongsangnam Province, Republic of Korea (2013-2014)",
+    "doi": "10.1111/1748-5967.12314",
+    "url": "https://doi.org/10.1111/1748-5967.12314",
+    "publisher": "Wiley / Entomological Society of Korea",
+    "published_online": "2018-07-12",
+    "license": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+    "license_basis": "Crossref version-of-record license deposit",
+    "funder": "Korea Centers for Disease Control & Prevention",
+    "awards": [
+      "2013-E5500200",
+      "2013-E5500201"
+    ],
+    "source_tables": [
+      "Table 1",
+      "Table 2",
+      "Table 4",
+      "Materials and methods"
+    ],
+    "source_artifact_checksum": null,
+    "source_artifact_checksum_note": "No machine-readable source dataset was published; factual table values were manually transcribed from the version of record."
+  },
+  "effort_basis": {
+    "active_periods": [
+      "2013-04-01/2013-11-30",
+      "2014-04-01/2014-11-30"
+    ],
+    "frequency": "one trap-night biweekly",
+    "hours_per_night": 14,
+    "trap_nights_per_site_per_year": 16,
+    "trap_nights_per_imported_row": 32,
+    "trap_hours_per_imported_row": 448,
+    "value_semantics": "published mean female Aedes albopictus per trap-night, rounded to 0.1; raw specimen counts were not reconstructed"
+  },
+  "screening": {
+    "published_site_rows": 7,
+    "included_rows": 6,
+    "excluded_rows": [
+      {
+        "site": "Daejeo-2-dong, Gangseo-gu, Busan",
+        "published_value": "<0.1 female mosquitoes per trap-night",
+        "reason": "published longitude is internally inconsistent with the named locality and the value is left-censored; neither field was corrected or assigned a point estimate"
+      }
+    ],
+    "occurrence_rows_modified": false
+  },
+  "grid": {
+    "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\korea_focus_cell_grid.geojson",
+    "sha256": "f8d330c861ecf1bde42e4918a1ccefdc0166be7914646eb61ded852da8aee94e",
+    "cell_count": 370,
+    "join_policy": "exact point-in-polygon only"
+  },
+  "output": {
+    "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\aedes_trap_abundance.csv",
+    "sha256": "65b0e78afc4b359b6306dc29a0cd705c85cd77dbd2b0201490cdf0f0ece54813",
+    "fieldnames": [
+      "record_id",
+      "source_id",
+      "observation_type",
+      "species",
+      "country",
+      "site_id",
+      "site_name",
+      "site_type",
+      "habitat",
+      "cell_id",
+      "longitude",
+      "latitude",
+      "source_coordinate",
+      "collection_start",
+      "collection_end",
+      "collection_years",
+      "active_months",
+      "sampling_frequency",
+      "trap_type",
+      "trap_bait",
+      "trap_start_time",
+      "trap_end_time",
+      "trap_hours_per_night",
+      "trap_nights",
+      "trap_hours",
+      "value",
+      "value_unit",
+      "value_qualifier",
+      "sex",
+      "taxonomic_basis",
+      "license",
+      "source_url",
+      "source_table",
+      "reporting_note"
+    ]
+  },
+  "builder": {
+    "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\scripts\\build_rok_aedes_trap_abundance.py",
+    "sha256": "f9d93a1a4afd01fac9cddfd29b73278cc4f92ab79d3a2ad2e7f216f0bf55dc18"
+  }
+}
