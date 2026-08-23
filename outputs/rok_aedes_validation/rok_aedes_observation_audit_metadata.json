@@ -1,10 +1,13 @@
 {
-  "created_utc": "2026-08-23T05:43:44.921962+00:00",
+  "created_utc": "2026-08-23T06:09:45.872876+00:00",
   "status": "ready_for_model_review",
   "template": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\aedes_observations.template.csv",
   "observations": "inputs\\aedes_observations.csv",
-  "n_records": 54,
-  "n_groups": 4,
+  "trap_abundance": "inputs\\aedes_trap_abundance.csv",
+  "n_records": 60,
+  "n_occurrence_records": 54,
+  "n_trap_abundance_records": 6,
+  "n_groups": 5,
   "warnings": [
     "line 3: cell_id is blank and requires a documented spatial join",
     "line 5: cell_id is blank and requires a documented spatial join",
@@ -17,6 +20,11 @@
     "line 37: cell_id is blank and requires a documented spatial join",
     "line 49: cell_id is blank and requires a documented spatial join"
   ],
+  "input_sha256": {
+    "observations": "7f4b7723520333207038d4e8542503d856ca661e893a2e687dd08da666f7857f",
+    "trap_abundance": "65b0e78afc4b359b6306dc29a0cd705c85cd77dbd2b0201490cdf0f0ece54813"
+  },
   "interpretation_boundary": "This audit is not a fitted model, validation score, abundance estimate, disease forecast, or DPRK assessment.",
-  "observation_types_are_separate": true
+  "observation_types_are_separate": true,
+  "trap_abundance_value_semantics": "Source-reported female mosquitoes per trap-night; not reconstructed raw counts, occurrence, disease risk, or incidence."
 }
