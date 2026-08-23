@@ -1,0 +1,51 @@
+{
+  "generated_utc": "2026-08-23T04:43:34+00:00",
+  "status": "PASS",
+  "scope": "korea",
+  "interpretation": "Population exposure indicators only; not disease risk, disease incidence, infection risk, or transmission estimates.",
+  "periods": {
+    "all": [
+      "1975-1984",
+      "1995-2004",
+      "2015-2024"
+    ],
+    "early": "1975-1984",
+    "recent": "2015-2024"
+  },
+  "checks": {
+    "population_input_complete_370_cells_1975_2024": true,
+    "cell_period_population_values_complete": true,
+    "period_summary_reconciles_with_cell_period": true,
+    "period_summary_coverage_is_100_percent": true,
+    "missingness_report_is_complete": true,
+    "change_summary_reconciles_with_cell_period": true,
+    "population_shares_are_between_zero_and_one": true,
+    "early_recent_periods_are_documented": true,
+    "interpretation_is_population_exposure_only": true
+  },
+  "provenance": {
+    "population_input": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\korea_landscan_population_by_cell_year.csv",
+    "population_input_sha256": "a0afc94b7deffacf09dab07b5d7dc52f10cbebf38857a1d3b6ae4a3eb1c6f040",
+    "suitability_input": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\tables\\korea_focus_cell_year_season.csv.gz",
+    "suitability_input_sha256": "abd35493b002eac7f18de39efd40aef0570ff6b1e00b49c87413f24265913ecc",
+    "run_metadata": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus_population\\population_exposure_run_metadata.json",
+    "run_metadata_sha256": "668f6313cceb64fa7a1339f1ba18eeca129e31f8f6c29da01333670d34d3222c",
+    "audited_outputs": {
+      "population_cell_period.csv.gz": "40d9b686bcf590a48c613c0bb0214f7fc17a4d09002e53773410aa627889b560",
+      "population_exposure_by_period.csv": "e8d28b0dd87b93d7dd314ce2f5b1753ca83301dda9e9ac0415d3a1bf9f11dfc5",
+      "population_exposure_change_early_to_recent.csv": "9c5065514f39642997a1750ddd296d0b387b7b58c56a342a94fc46a1e3213044",
+      "population_missingness.csv": "81e6d9503ca98a58b3862419d9de4c6f592efeda0f5f6d08afcd7f8d627fee10"
+    },
+    "recorded_population_source": {
+      "dataset": "LandScan Mosaic Annual Global Ambient Population Time Series, Version 1.0",
+      "official_dataset_page": "https://impact.ornl.gov/en/datasets/landscan-mosaic-annual-global-ambient-population-time-series-vers/",
+      "collection": "projects/sat-io/open-datasets/ORNL/LANDSCAN_MOSAIC_TIMESERIES",
+      "years": [
+        1975,
+        2024
+      ],
+      "expected_measure": "ambient population, number of people per analysis cell"
+    }
+  },
+  "errors": []
+}

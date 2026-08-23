@@ -186,8 +186,9 @@ def read_suitability(path: Path) -> pd.DataFrame:
     suitability["cell_id"] = suitability["cell_id"].astype(str)
     suitability["year"] = pd.to_numeric(suitability["year"], errors="raise").astype(int)
     expected = {"1975-1984", "1995-2004", "2015-2024"}
+    suitability = suitability[suitability["period"].isin(expected)].copy()
     if set(suitability["period"]) != expected:
-        raise ValueError("Suitability table does not contain exactly the three target periods")
+        raise ValueError("Suitability table does not contain all three target periods")
     if suitability.duplicated(["species", "cell_id", "year"]).any():
         raise ValueError("Suitability table has duplicate species-cell-year rows")
     return suitability
@@ -436,7 +437,7 @@ def main() -> None:
     suitability = filter_suitability(read_suitability(suitability_path))
     joined, population_period = build_cell_period_table(suitability, population)
     if args.require_complete:
-        expected = suitability[["country", "cell_id", "period"]].drop_duplicates().shape[0]
+        expected = suitability[["species", "country", "cell_id", "period"]].drop_duplicates().shape[0]
         complete = int(joined["population_mean_ambient"].notna().sum())
         if complete != expected:
             raise ValueError(f"Population coverage is incomplete: {complete}/{expected} cell-period rows")

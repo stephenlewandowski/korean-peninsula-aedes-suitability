@@ -71,6 +71,27 @@ source limitations, not as exact counts of people at risk.
 
 ## Current status
 
-The repository contains the extraction code, template, and provenance contract.
-No Korea population exposure result is claimed until a LandScan export has
-been aligned, checked, and saved as `inputs/landscan_population_by_cell_year.csv`.
+The Korea LandScan population-exposure gate is **PASSED for the prepared
+population join**. The reviewed export contains 370 cells across 1975–2024,
+with no duplicate cell-year rows, complete target-period coverage, and no
+negative or non-finite values. The strict preparation run and independent
+audit are:
+
+```bash
+python scripts/prepare_population_exposure.py \
+  --scope korea \
+  --population inputs/korea_landscan_population_by_cell_year.csv \
+  --require-complete
+
+python scripts/audit_korea_population_exposure.py \
+  --output-dir outputs/korea_focus_population \
+  --population inputs/korea_landscan_population_by_cell_year.csv
+```
+
+The independent audit verifies 100% cell-period coverage, arithmetic
+reconciliation, bounded population shares, finite weighted metrics, the
+1975–1984 versus 2015–2024 comparison, interpretation boundaries, and SHA-256
+input/output provenance. Results remain population-exposure indicators and
+must not be described as disease incidence, infection risk, individual risk,
+or transmission estimates. The audit record is
+`outputs/korea_focus_population/population_exposure_audit.json`.
