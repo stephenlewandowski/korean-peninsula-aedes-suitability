@@ -32,12 +32,26 @@ license, and reporting note. `occurrence`, `trap_presence`, and
 `trap_abundance` rows are intentionally kept distinct; trap abundance is not
 silently converted into presence or merged with opportunistic occurrences.
 
+Build the source-screened occurrence import with:
+
+```bash
+python3 scripts/build_rok_aedes_observations.py
+```
+
+The builder records the GBIF query, source dataset metadata, per-record
+licenses, occurrence identifiers, exact grid-join status, and an SHA-256 hash
+in `metadata/rok_aedes_source_registry.json`. It excludes year-only records
+instead of fabricating a month and leaves `sampling_effort` blank for
+occurrence records whose source does not report a standardized denominator.
+
 Run the schema/readiness audit with:
 
 ```bash
-python3 scripts/audit_rok_aedes.py
+python3 scripts/audit_rok_aedes.py \
+  --observations inputs/aedes_observations.csv \
+  --output-dir outputs/rok_aedes_validation
 ```
 
-The command validates the empty template when no populated file is supplied.
-No model fit or validation metric is reported until a reviewed public table is
-placed at `inputs/aedes_observations.csv` and checked with the same script.
+The current audit is a source-readiness result, not a fitted model or
+validation metric. Occurrence rows are not converted into trap abundance or
+effort-standardized rates.

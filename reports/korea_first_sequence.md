@@ -7,7 +7,7 @@ gates while keeping the Korean Peninsula primary.
 | --- | --- | --- |
 | 1 | Korea-only static suitability tables, maps, and metadata | Implemented and reproducible |
 | 2 | Korea-only LandScan ambient-population export and exposure summary | Code and export contract implemented; data pending |
-| 3 | ROK Aedes observations with spatial and temporal holdouts | Schema, audit, and protocol implemented; observations pending |
+| 3 | ROK Aedes observations with spatial and temporal holdouts | Source-screened occurrence import and audit implemented; effort-aware model validation pending review |
 | 4 | Heat, humidity, land-use, and population driver diagnostics | Existing source-gated protocol retained; data and collinearity review pending |
 | 5 | Lagged surveillance comparison and early-warning feasibility | Existing source-gated protocols retained; outcomes, out-of-sample validation, calibration, uncertainty, and threshold review pending |
 

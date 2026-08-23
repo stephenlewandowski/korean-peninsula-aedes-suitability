@@ -1,11 +1,22 @@
 {
-  "created_utc": "2026-08-20T04:40:51.983669+00:00",
-  "status": "schema_checked_no_observations_supplied",
-  "template": "inputs/aedes_observations.template.csv",
-  "observations": null,
-  "n_records": 0,
-  "n_groups": 0,
-  "warnings": [],
+  "created_utc": "2026-08-23T05:43:44.921962+00:00",
+  "status": "ready_for_model_review",
+  "template": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\aedes_observations.template.csv",
+  "observations": "inputs\\aedes_observations.csv",
+  "n_records": 54,
+  "n_groups": 4,
+  "warnings": [
+    "line 3: cell_id is blank and requires a documented spatial join",
+    "line 5: cell_id is blank and requires a documented spatial join",
+    "line 11: cell_id is blank and requires a documented spatial join",
+    "line 14: cell_id is blank and requires a documented spatial join",
+    "line 17: cell_id is blank and requires a documented spatial join",
+    "line 30: cell_id is blank and requires a documented spatial join",
+    "line 32: cell_id is blank and requires a documented spatial join",
+    "line 33: cell_id is blank and requires a documented spatial join",
+    "line 37: cell_id is blank and requires a documented spatial join",
+    "line 49: cell_id is blank and requires a documented spatial join"
+  ],
   "interpretation_boundary": "This audit is not a fitted model, validation score, abundance estimate, disease forecast, or DPRK assessment.",
   "observation_types_are_separate": true
 }

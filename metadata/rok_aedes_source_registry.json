@@ -1,0 +1,105 @@
+{
+  "generated_utc": "2026-08-23T05:43:36+00:00",
+  "review_status": "source_fields_reviewed_for_taxon_country_coordinate_date_license",
+  "modeling_status": "occurrence_only; human scientific review remains required before model fitting",
+  "target_species": "Aedes albopictus",
+  "target_country": "South Korea",
+  "query_url": "https://api.gbif.org/v1/occurrence/search?scientificName=Aedes+albopictus&country=KR&hasCoordinate=true&occurrenceStatus=PRESENT&year=1975%2C2024&limit=300&offset=0",
+  "query_policy": {
+    "accepted_taxon_prefix": "Aedes albopictus",
+    "country_code": "KR",
+    "occurrence_status": "PRESENT",
+    "basis_of_record": "HUMAN_OBSERVATION",
+    "requires_coordinate": true,
+    "requires_year_and_month": true,
+    "year_range": [
+      1975,
+      2024
+    ],
+    "rok_coordinate_bounds": {
+      "longitude": [
+        124.0,
+        132.5
+      ],
+      "latitude": [
+        33.0,
+        39.0
+      ]
+    },
+    "sampling_effort_policy": "blank for occurrence records when the source does not report a standardized effort denominator",
+    "year_only_policy": "exclude; do not fabricate month or date precision"
+  },
+  "raw_api_records": 61,
+  "included_rows": 54,
+  "excluded_records": 7,
+  "exclusion_reasons": {
+    "missing_month_or_required_source_field_or_screen_failure": 7
+  },
+  "grid": {
+    "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\outputs\\korea_focus\\korea_focus_cell_grid.geojson",
+    "cell_count": 370,
+    "join_policy": "exact point-in-polygon only; blank cell_id means no exact intersection"
+  },
+  "sources": {
+    "080ffaf0-8daf-48bb-b063-3d729c80cb70": {
+      "title": "NATURING_CS_Observation_Dataset",
+      "description": "<p>These are verified observation records from the citizen science platform NATURING(www.naturing.net). NATURING is South Korea\u2019s first biodiversity citizen science platform, launched in 2014. NATURING strives to ensure that citizens\u2019 voluntary observations and records contribute to biodiversity and ecosystem conservation.&#34;</p>",
+      "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+      "homepage": null,
+      "gbif_dataset_url": "https://api.gbif.org/v1/dataset/080ffaf0-8daf-48bb-b063-3d729c80cb70"
+    },
+    "1e09d985-8f58-4a34-ab86-17e55f203c8a": {
+      "title": "niek_2022",
+      "description": "niek_2021",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "homepage": null,
+      "gbif_dataset_url": "https://api.gbif.org/v1/dataset/1e09d985-8f58-4a34-ab86-17e55f203c8a"
+    },
+    "1fef1ead-3d02-495e-8ff1-6aeb01123408": {
+      "title": "Mosquito Alert Dataset",
+      "description": "The Mosquito Alert dataset includes occurrence records of adult mosquitoes. The records were collected through Mosquito Alert, a citizen science system for investigating and managing disease-carrying mosquitoes. Each record presented in the database is linked to a photograph submitted by a citizen scientist and validated by entomological experts to determine if it provides evidence of the presence of any of five targeted mosquito vectors of top concern in Europe (i.e. Aedes albopictus, Aedes aegypti, Aedes japonicus, Aedes koreicus, Culex pipiens). The temporal coverage of the database is from 2014 through 2022 and the spatial coverage is worldwide. Most of the records from 2014 to 2020 are from Spain, reflecting the fact that the project was funded by Spanish national and regional funding agencies. Since autumn 2020 the data has expanded to include substantial records from other countries in Europe, particularly the Netherlands, Italy, and Hungary, thanks to a human volunteering network of entomologists coordinated by the AIM-COST Action and to technological developments through the VEO project to increase scalability. Among many possible applications, Mosquito Alert dataset facilitates the development of citizen-based early warning systems for mosquito-borne disease risk. This dataset can be further re-used for modelling vector exposure risk or training machine-learning detection and classification routines on the linked images, to help experts in data validation and build up automated alert systems.",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "homepage": "http://mosquitoalert.com",
+      "gbif_dataset_url": "https://api.gbif.org/v1/dataset/1fef1ead-3d02-495e-8ff1-6aeb01123408"
+    },
+    "33614778-513a-4ec0-814d-125021cca5fe": {
+      "title": "Global compendium of Aedes albopictus occurrence",
+      "description": "<p>Aedes aegypti and Ae. albopictus are the main vectors transmitting dengue and chikungunya viruses. Despite being pathogens of global public health importance, knowledge of their vectors\u2019 global distribution remains patchy and sparse. A global geographic database of known occurrences of Ae. aegypti and Ae. albopictus between 1960 and 2014 was compiled. Herein we present the database, which comprises occurrence data linked to point or polygon locations, derived from peer-reviewed literature and unpublished studies including national entomological surveys and expert networks. We describe all data collection processes, as well as geo-positioning methods, database management and quality-control procedures. This is the first comprehensive global database of Ae. aegypti and Ae. albopictus occurrence, consisting of 19,930 and 22,137 geo-positioned occurrence records respectively. Both datasets can be used for a variety of mapping and spatial analyses of the vectors and, by inference, the diseases they transmit.</p>",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+      "homepage": null,
+      "gbif_dataset_url": "https://api.gbif.org/v1/dataset/33614778-513a-4ec0-814d-125021cca5fe"
+    },
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": {
+      "title": "iNaturalist Research-grade Observations",
+      "description": "<p>\n        Observations from iNaturalist.org, an online social network of people sharing biodiversity information to help each other learn about nature.\n      </p><p>\n        Observations included in this archive met the following requirements:\n      </p><p>\n        * Published under one of the following licenses or waivers:\n        1) https://creativecommons.org/publicdomain/zero/1.0/, 2) https://creativecommons.org/licenses/by/4.0/, 3) https://creativecommons.org/licenses/by-nc/4.0/\n      </p><p>\n        * Achieved one of following iNaturalist quality grades: Research\n      </p><p>\n        * Created on or before 2026-08-10 15:00:17 -0700\n      </p><p>\n        You can view observations meeting these requirements at https://www.inaturalist.org/observations?created_d2&#61;2026-08-10&#43;15%3A00%3A17&#43;-0700&amp;d1&#61;1600-01-01&amp;license&#61;CC0%2CCC-BY%2CCC-BY-NC&amp;quality_grade&#61;research\n      </p>",
+      "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+      "homepage": "https://www.inaturalist.org/observations",
+      "gbif_dataset_url": "https://api.gbif.org/v1/dataset/50c9509d-22c7-4a22-a47d-8c48425ef4a7"
+    }
+  },
+  "output": {
+    "path": "C:\\Projects\\Public_GitHub\\korean-peninsula-aedes-suitability\\inputs\\aedes_observations.csv",
+    "sha256": "7f4b7723520333207038d4e8542503d856ca661e893a2e687dd08da666f7857f",
+    "fieldnames": [
+      "record_id",
+      "source_id",
+      "observation_type",
+      "species",
+      "country",
+      "geography",
+      "cell_id",
+      "longitude",
+      "latitude",
+      "collection_date",
+      "date_precision",
+      "year",
+      "month",
+      "value",
+      "unit",
+      "sampling_effort",
+      "taxonomic_basis",
+      "license",
+      "reporting_note"
+    ]
+  }
+}

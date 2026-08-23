@@ -1,1 +1,5 @@
 source_id,observation_type,species,country,n_records,n_with_coordinates,n_with_collection_date,n_with_cell_id,n_with_sampling_effort,observation_model_required
+GBIF:080ffaf0-8daf-48bb-b063-3d729c80cb70,occurrence,Aedes albopictus,South Korea,5,5,5,4,0,False
+GBIF:1e09d985-8f58-4a34-ab86-17e55f203c8a,occurrence,Aedes albopictus,South Korea,28,28,28,22,0,False
+GBIF:1fef1ead-3d02-495e-8ff1-6aeb01123408,occurrence,Aedes albopictus,South Korea,4,4,4,4,0,False
+GBIF:50c9509d-22c7-4a22-a47d-8c48425ef4a7,occurrence,Aedes albopictus,South Korea,17,17,17,14,0,False
