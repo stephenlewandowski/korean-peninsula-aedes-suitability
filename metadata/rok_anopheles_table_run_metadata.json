@@ -1,0 +1,58 @@
+{
+  "generated_utc": "2026-08-23T04:30:41+00:00",
+  "target_species": "Anopheles sinensis",
+  "country": "South Korea",
+  "arcgis_layer": "https://services2.arcgis.com/HRY6x8qt5qjGnAA9/arcgis/rest/services/MosquitoMap2/FeatureServer/0",
+  "arcgis_experience": "https://experience.arcgis.com/experience/5f95c3edfbea4634b8347fec0bd1dcd6",
+  "arcgis_filter": "Species = 'sinensis' AND Country LIKE '%Korea%' AND IdentificationMethod = 'DNA'",
+  "supplementary_sources": {
+    "hong_2023": "https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12936-023-04821-x/MediaObjects/12936_2023_4821_MOESM1_ESM.docx",
+    "jeon_2024": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-025-29307-5/MediaObjects/41598_2025_29307_MOESM1_ESM.docx"
+  },
+  "grid_path": "outputs\\korea_focus\\korea_focus_cell_grid.geojson",
+  "observation_rows": 488,
+  "observation_rows_with_grid_cell": 238,
+  "observation_rows_without_grid_cell": 250,
+  "observation_source_counts": {
+    "RUEDA_2006_ROK_1998_2004": 45,
+    "KIM_2007_ROK_2005_SURVEY": 88,
+    "USFK_2005_INSTALLATION_SURVEY": 9,
+    "KLEIN_2006_FIELD_COLLECTION": 82,
+    "HONG_2023_GIMPO_GANGHWA": 118,
+    "JEON_2025_GANGHWA_2024": 146
+  },
+  "observation_year_counts": {
+    "1998": 2,
+    "1999": 8,
+    "2001": 8,
+    "2002": 5,
+    "2003": 17,
+    "2004": 5,
+    "2005": 97,
+    "2006": 82,
+    "2022": 26,
+    "2023": 92,
+    "2024": 146
+  },
+  "unique_site_ids": 156,
+  "unique_spatial_blocks_0p1deg": 85,
+  "direct_observation_years": [
+    1998,
+    1999,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2022,
+    2023,
+    2024
+  ],
+  "published_aggregate_rows": 9,
+  "scope_boundary": [
+    "No absence or effort-standardized rate is inferred from missing records.",
+    "Published aggregates are not pooled with individual records.",
+    "The table supports validation partition design but not a completed predictive gate."
+  ]
+}

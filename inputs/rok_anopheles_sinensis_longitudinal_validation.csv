@@ -1,0 +1,15 @@
+source_id,year,observation_rows,unique_sites,unique_spatial_blocks_0p1deg,unique_cells,reported_individual_count_sum,rows_with_collection_date,rows_with_month,taxonomic_basis,sampling_effort_status,validation_role
+RUEDA_2006_ROK_1998_2004,1998,2,1,1,1,,0,2,molecular_DNA_source_record,not standardized across records; no zeros inferred,presence-only molecular stratum
+RUEDA_2006_ROK_1998_2004,1999,8,6,4,4,,0,8,molecular_DNA_source_record,not standardized across records; no zeros inferred,presence-only molecular stratum
+RUEDA_2006_ROK_1998_2004,2001,8,6,5,4,,0,8,molecular_DNA_source_record,not standardized across records; no zeros inferred,presence-only molecular stratum
+RUEDA_2006_ROK_1998_2004,2002,5,4,4,4,,0,5,molecular_DNA_source_record,not standardized across records; no zeros inferred,presence-only molecular stratum
+RUEDA_2006_ROK_1998_2004,2003,17,15,11,7,,0,17,molecular_DNA_source_record,not standardized across records; no zeros inferred,presence-only molecular stratum
+RUEDA_2006_ROK_1998_2004,2004,5,5,2,0,,0,5,molecular_DNA_source_record,not standardized across records; no zeros inferred,presence-only molecular stratum
+KIM_2007_ROK_2005_SURVEY,2005,88,44,25,20,3194,88,88,source_confirmed_molecular_ITS2,not standardized across records; no zeros inferred,presence-only molecular stratum
+USFK_2005_INSTALLATION_SURVEY,2005,9,9,8,6,1283,0,0,molecular_DNA_layer_record_protocol_pending,not standardized across records; no zeros inferred,presence-only molecular stratum
+KLEIN_2006_FIELD_COLLECTION,2006,82,64,37,30,1861,0,82,molecular_DNA_layer_record_protocol_pending,not standardized across records; no zeros inferred,presence-only molecular stratum
+LEE_2022_FIELD_2020,2020,1,8,,,165,0,0,PCR; published study aggregate,trap type and study window reported; site-event denominators not extracted,aggregate context only
+JEON_2025_FIELD_2021,2021,8,8,,,122,0,0,multiplex PCR; published site-period aggregate,biweekly trap collection reported; exact site-event denominators not extracted,site-period aggregate context
+HONG_2023_GIMPO_GANGHWA,2022,26,1,1,1,26,26,26,verified_PCR_or_ITS2_source_table; verified_species_source_table_method_not_printed,not standardized across records; no zeros inferred,presence-only molecular stratum
+HONG_2023_GIMPO_GANGHWA,2023,92,2,2,1,92,92,92,verified_PCR_or_ITS2_source_table,not standardized across records; no zeros inferred,presence-only molecular stratum
+JEON_2025_GANGHWA_2024,2024,146,2,1,0,146,146,146,verified_PCR_or_ITS2_source_table,not standardized across records; no zeros inferred,presence-only molecular stratum
