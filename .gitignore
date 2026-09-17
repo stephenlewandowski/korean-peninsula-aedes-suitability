@@ -5,3 +5,6 @@ source/countries.geojson
 tmp/
 vendor/
 __pycache__/
+# Superseded ad-hoc Earth Engine asset-upload grids (the canonical cell grid is the tracked .geojson)
+outputs/korea_focus/*_cell_grid_ee.csv
+outputs/korea_focus/*_cell_grid_polygon.csv
